@@ -1,69 +1,161 @@
-<html>
+<!DOCTYPE html>
+<html lang="zh-Hant">
 <head>
-    <meta charset="utf-8">
-    <meta name="description" content="台東必吃特色美食店家與伴手禮推薦">
-    <meta name="author" content="Student">
-    <meta name="viewport" content="width=device-width">
-    <title>精選必吃與伴手禮 - 台東美食指南</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K-POP 女團魅力大解析</title>
+    <!-- 引入 Google Fonts 與 Bootstrap 5 樣式 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        .hero-section {
+            background: linear-gradient(135deg, #ff758c 0%, #ff7eb3 100%);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+        .card {
+            border: none;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+        }
+        .card-img-top {
+            height: 220px;
+            object-fit: cover;
+        }
+        .footer {
+            background-color: #343a40;
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
 
-    <h1>台東精選必吃店家與伴手禮 🍽️</h1>
-    <p>以下為來到台東旅遊時不容錯過的代表性店家與人氣名產：</p>
+    <!-- 導覽列 -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">✨ K-POP Girl Groups</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#groups">人氣女團</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#features">曲風特色</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">聯絡我們</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-    <hr>
+    <!-- 網頁標頭 (Hero Section) -->
+    <header class="hero-section">
+        <h1 class="fw-bold">探索風靡全球的韓流魅力</h1>
+        <p class="lead mt-2">帶你認識引領潮流與時尚的頂尖女子偶像團體</p>
+    </header>
 
-    <h2>必吃人氣美食推薦</h2>
-    
-    <!-- 有序列表 <ol> -->
-    <ol>
-        <li>
-            <h3>榕樹下米苔目 / 老東台米苔目</h3>
-            <p>Q彈有勁的米苔目搭配滿滿柴魚片與濃郁肉燥湯頭，加點一顆滷蛋或貢丸是在地最經典的吃法。</p>
-            <img src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=500" alt="熱騰騰米苔目" width="300">
-        </li>
+    <!-- 內容主容器 -->
+    <div class="container my-5" id="groups">
+        <h2 class="text-center fw-bold mb-4">🌟 當前最具代表性的人氣女團</h2>
+        <p class="text-center text-muted mb-5">點燃全球舞台的閃耀新星與傳奇組合</p>
 
-        <br>
+        <div class="row g-4">
+            <!-- 團體 1: BLACKPINK -->
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="BLACKPINK">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">BLACKPINK</h5>
+                        <h6 class="text-muted">YG Entertainment</h6>
+                        <p class="card-text mt-3">以強烈的 Crush Girl 風格、席捲全球的百億流量 MV 以及引領國際時尚潮流聞名，是全球最具影響力的頂級女團之一。</p>
+                    </div>
+                </div>
+            </div>
 
-        <li>
-            <h3>藍蜻蜓速食專賣店 / 阿鋐炸雞</h3>
-            <p>台東兩大知名懷舊台式炸雞老店，外皮香酥多汁，配上特製胡椒鹽與香濃奶茶，是下午茶與宵夜的首選。</p>
-            <img src="https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?w=500" alt="香酥炸雞" width="300">
-        </li>
+            <!-- 團體 2: (G)I-DLE -->
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="https://images.unsplash.com/photo-1526478806334-5fd488fcaabc?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="(G)I-DLE">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">(G)I-DLE</h5>
+                        <h6 class="text-muted">Cube Entertainment</h6>
+                        <p class="card-text mt-3">以實力派「全創作自給自足」聞名，隊長小娟帶領成員打造出《Tomboy》、《Queencard》等多首破億洗腦神曲，充滿大膽且自信的獨特風格。</p>
+                    </div>
+                </div>
+            </div>
 
-        <br>
+            <!-- 團體 3: IVE -->
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="IVE">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">IVE</h5>
+                        <h6 class="text-muted">Starship Entertainment</h6>
+                        <p class="card-text mt-3">主打「Narcissism（自我愛戀）」的概念，以極具中毒性的旋律（如《Love Dive》、《I AM》）和高顏值席捲各大音源榜。</p>
+                    </div>
+                </div>
+            </div>
 
-        <li>
-            <h3>卑南豬血湯</h3>
-            <p>湯頭濃郁大骨香氣，豬血滑嫩無腥味，搭配滿滿韭菜與酸菜，在地人與遊客都非常喜愛。</p>
-            <img src="https://images.unsplash.com/photo-1547592180-85f173990554?w=500" alt="傳統豬血湯" width="300">
-        </li>
+            <!-- 團體 4: NewJeans -->
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="NewJeans">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">NewJeans</h5>
+                        <h6 class="text-muted">ADOR</h6>
+                        <p class="card-text mt-3">掀起復古 Y2K 流行風潮的寶藏女團，以輕鬆耐聽的 Easy-Listening R&B 曲風及獨特清純自然的魅力贏得大眾喜愛。</p>
+                    </div>
+                </div>
+            </div>
 
-        <br>
+            <!-- 團體 5: aespa -->
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="aespa">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">aespa</h5>
+                        <h6 class="text-muted">SM Entertainment</h6>
+                        <p class="card-text mt-3">開創元宇宙與 AI 概念的世界觀女團。憑藉《Next Level》、《Supernova》等前衛洗腦的強烈電子舞曲震撼樂壇。</p>
+                    </div>
+                </div>
+            </div>
 
-        <li>
-            <h3>原住民傳統風味料理 (阿拜 A-bai)</h3>
-            <p>類似傳統粽子，外層包裹假酸漿葉，內餡為小米與豬肉，入口帶著獨特葉香，是體驗部落文化必吃的特色美食。</p>
-            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=500" alt="原住民風味料理" width="300">
-        </li>
-    </ol>
+            <!-- 團體 6: LE SSERAFIM -->
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="LE SSERAFIM">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">LE SSERAFIM</h5>
+                        <h6 class="text-muted">Source Music</h6>
+                        <p class="card-text mt-3">以「無所畏懼（I'M FEARLESS）」為核心精神，主打高難度刀群舞與充滿力量的自信態度，展現獨樹一格的 Girl Crush 魅力。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <hr>
+    <!-- 頁尾 -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <p class="mb-0">© 2026 K-POP Girl Groups Intro. Designed for Web Design Assignment.</p>
+        </div>
+    </footer>
 
-    <h2>必買台東伴手禮</h2>
-    <!-- 無序列表 <ul> -->
-    <ul>
-        <li><strong>陳記麻糬：</strong>手工現做，皮薄餡多，綠豆花生與紅豆口味極具特色。</li>
-        <li><strong>楊記家傳地瓜酥：</strong>裹上薄薄麥芽糖的酥脆地瓜片，香甜不黏牙。</li>
-        <li><strong>封仔餅：</strong>台東傳統綠豆椪月餅，使用紅色草紙包裝，充滿懷舊復古風格。</li>
-    </ul>
-
-    <br>
-    <hr>
-    <p><a href="index.html">返回美食指南首頁</a></p>
-
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
 
 
